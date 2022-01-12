@@ -1,0 +1,1223 @@
+so functions for those of you that have
+had programming experience
+most of it's going to be
+similar at least in the overall
+development of them but python has some
+very interesting features
+that you may not have had in your
+previous languages c plus and java
+for those of you that are new to
+programming
+functions the only thing that they're
+really at first they're good for
+is for breaking down larger pieces into
+smaller ones
+that frankly that we can test
+and maybe do a little bit of better job
+of organizing
+for right now except for your homeworks
+your homeworks have gotten a little bit
+longer and longer each time
+i'm not getting rid of that length when
+it comes to homework it's just not going
+to happen but
+we're going to start breaking them down
+into logical blocks called functions so
+that frankly you might be able to get
+away with fixing some pieces or
+developing some pieces without the rest
+of it quite yet
+but it is up to you unless it's
+specified in the homework on how you
+want to break it up
+and again that's all we're doing is
+really breaking up really long pieces of
+code
+so what you see in front of you is my
+normal day
+when i'm teaching i wake up i get
+showery dress drive to work which takes
+me an hour hour 15 at times
+go to the fridge find food grab a coke i
+don't drink as much coke anymore
+change that up find a seat eat food then
+i go teach
+and then about an hour and a half two
+hours later i go back to the fridge find
+so notice my schedule is very boring
+okay
+i don't have a life
+but
+i'm going to represent that in the same
+fashion on the right hand side
+on the right hand side the only thing
+that i did
+was i grouped up
+one portion that happens to repeat
+now i don't want you to think of it as a
+loop
+because
+in that block i am doing different
+things but notice i have other times in
+between that's happening
+that is going to be different so it's
+not exactly a loop but i am breaking up
+into logical blocks so now
+on the right hand side it's representing
+the exact
+same thing
+the only thing that's different is i
+created a block which is going to be a
+function eventually that has the same
+instructions that i do every time i go
+to eat
+go to the fridge find a coke right sorry
+go to fridge find food grab a coke find
+a seat eat food
+i bet a lot of you have routines and
+here's the other word for functions
+called a routine i bet a lot of you have
+a routine in the morning
+right
+i'm not going to discuss some of your
+routines because some of you are being
+gross already okay but i bet some of you
+have the same routines every single
+morning
+that's another name for a function as a
+routine same idea
+so your final setup is going to start
+changing today
+there was a lot of times where we didn't
+have a main or we did have a main and
+some of you i let you go and now it's
+going to stop
+and frankly it also is going to reflect
+more of what you had to do for your
+homework anyway
+so in your file setup
+you're going to have two different major
+pieces here i guess so maybe three
+but in any dot py file certainly doesn't
+have to be the poly fpy
+you're going to have your functions
+first that's the yellow force yellow wow
+the blue portion first
+then you'll have your main like you
+normally have had before and then you're
+called that means the very bottom
+so for some of you the only big change
+is actually putting functions at the
+very top
+we'll talk about why here in a little
+bit
+the bad part is is that it needs to be
+in that order
+you can't call the main which is in
+yellow and do it at the very top because
+we haven't defined what the main is
+you'll notice that when we define a main
+in python it's always def main and then
+in parentheses
+that's what we're actually declaring
+what the mean is
+so we have to
+here's a declare for a change we have to
+define what the mean is going to be
+first before we can use it
+so that order has to basically be right
+about the same order we got now
+so that's what's going to happen
+there are different types of functions
+let's give me one section
+in your different types of functions
+you have
+functions
+which return values
+these values can be lists yes functions
+can return a list they can be integers
+doubles floats whatever
+then you have your predicate functions
+and these functions
+the last one
+is called
+just a procedure
+in a procedure
+it still does something
+it's actually still very important
+it just doesn't return anything and i
+know some of you are wondering what the
+heck does return mean and i'll go over
+there in a second just bear with me
+but all three are very important
+all three are very important and you
+need to know the terminology between all
+three because it'll come up in some of
+your homeworks and other things like
+that all right
+now
+creating a procedure
+this should look very similar to the
+main that you just had that you've been
+working on and seeing
+first is going to be that def
+that def means that you're defining
+what is the next item over which in this
+case is going to be print menu
+and then you have an empty set of
+parenthesis and a colon
+then underneath of that with the tab is
+all of your other statements that you
+want
+inside of that particular
+procedure
+now it's going to look very similar to
+the main can you have loops in that
+procedure absolutely can you have a list
+of that procedure absolutely everything
+that you've done so far you can put into
+any procedure function you want
+everything
+there's no holds bar
+not
+that's a nice part about that
+now
+to see how a procedure works
+mechanically
+it's very similar to when we call the
+man when you saw some examples at the
+very end
+if you use let me put this way
+i on the side i'm a remodeler i do a lot
+of things with houses i put in she's
+insulation
+wiring all that stuff i have a lot of
+different tool boxes
+but if i don't use that tool that's okay
+it's still sitting there and being and
+waiting to be used
+think of a function or as a procedure as
+a tool
+that we're not using unless we call it
+i know all of you have made this mistake
+before for those of you that develop a
+main you run the program and it doesn't
+spit out anything you're like what the
+hell's the problem
+and you forgot to call the main at the
+very very end
+i know i do it all the time
+so your functions can be sitting there
+and not be called and that's okay
+it is a tool that you may need to use
+later on
+but when you call it like you do here
+with print menu
+it's eventually going to physically jump
+to the print menu function it'll
+complete it from top to bottom
+and then
+it'll come back to the next line so
+there's a physical jump whenever you
+call a function
+but you have to define what the function
+is first in order for it to do its job
+so there is some physical jumping around
+yes sir when you're creating a function
+how do you
+is it just indentation to
+finish when you finish yeah you or you
+want in debt for your next function
+your depth for your next function like
+main because remember all of your custom
+functions are going to be above the main
+your main would start the next line flat
+and be def main on character one
+yep that easy uh let me go with you both
+have glasses uh gentlemen in front
+so when you call them
+is that is that kind of like another
+function yeah
+yeah he asked is calling a man of
+function yeah in python i actually don't
+have to name it main
+i could name it keith
+but as long as i call keith and keith
+has defined it and we'll run that
+function
+so but main is what we're used to
+frankly from other languages and stuff
+like that but yes absolutely great
+question and i'm about i just want to
+make sure so um
+in the beginning you're deferring me and
+then you're also deferring all the
+functions defining what you're defining
+yeah deferring yeah it sounds like we're
+in a hospital bed deferring so
+so yeah define it yes
+so notice we're defining all the
+functions we have to define them first
+build them put it whatever we want and
+then we can call on after that
+okay
+yes sir i'm not sure if this is related
+but in some of our like more recent
+programming assignments there's we have
+to do a thing where you if
+um underscore underscore name is equal
+to underscore underscore main i'm not
+sure yeah that's just defining it if it
+happens to be a main
+that's why so yes you're looking for me
+if there's one to find it as one oh okay
+all right moving along
+here's your first little exercise here
+this is kind of screwed up so sorry guys
+uh give me a second here yeah
+all right let me fix that real quick
+so functions calling other functions in
+determining order
+you can have functions called other
+functions
+it's just that simple
+it's basically think of it as linking as
+the overall mechanics was we're calling
+a main there's really no difference with
+that let me get rid of this real quick
+there we go
+so here's what i want you to try to do
+number one
+i would not
+i got to fix this
+do not copy and paste the code that i
+have in front of you
+there's problems
+it's actually can anybody see the
+problems there's actually nothing
+syntactically wrong with it but there's
+an issue with it yes sir
+go ahead
+yeah it's a quotation marks are bad
+those are the smart quotes
+notice how they're angled okay they need
+to be flat up and down
+okay so do not copy pastes i do not want
+you running this code
+the only thing that i really want you to
+do is look it over with the teammate the
+classmate
+and answer those three questions
+that's what i want you to work on right
+now get to work wake up a little bit
+let's go
+talk it over now you can talk
+so maine will be your first function
+that you call
+peering
+and that's because of really if you read
+it from top down notice
+we're defining all of our functions
+we're even defining our main
+which is how it got that highlighted
+green spot
+that doesn't mean we're running it yet
+it just means that we're defining it
+but to actually get the sucker dead
+going and run
+we have to call it first
+that's why you see maine being called at
+the very almost very last line
+are we okay with that
+moving on
+number two which function this entire
+program would be called second
+who's going to answer for me for that
+yes sir get function 1 is the answer for
+that
+right
+and finally
+what will be displayed from the code
+above
+so
+as you know we're going to call the main
+and the first function inside domain is
+get function one
+get function one i physically hop up
+there
+and it says print a
+so on the screen is going to print our a
+so i'm going to write it on the board
+even though
+well i'm going to try this one oh no
+wait you gave me a marker
+[Music]
+to put it
+put your marker here
+i'm going to print an a
+then
+in function one i print a but then it
+has another call to another function
+and it says let's see that says function
+three
+so now i'm going to hop to function
+three
+in function three it says print
+c
+after i'm done printing see is there
+anything else left in that function
+now
+be careful what i'm about to ask
+when i am done
+with printing and taking care of
+everything in function c
+where do i go back
+to
+maine is not the correct answer
+who called print function or sorry get
+function three who called it really
+get function one
+so we'll actually go back to get
+function one first because that's the
+one that brought it
+and now back at get function one i'm all
+done now where does that one go back to
+that goes back to the main because
+that's the one i originally called it
+so notice there's a very distinct
+procedure on this
+that hopefully you're learning from them
+all right
+then because i'm always back to the main
+i get the get function 2 get function 2
+prints of b
+and then it's all done there's nothing
+left that goes back to main whoever
+called it
+and maintenance says get function 4
+and get function 4 prints a d
+but
+it does say get function three
+so we get function three and that prints
+a c
+[Music]
+and then once function three is done it
+goes back to function 4 and then 4 is
+done then that goes back to me
+is everybody okay with that though
+now notice there's no oh you know it
+probably could there's no probably
+there's a very set procedure on how this
+is done
+do not assume the function is done
+go back
+take a look to see if there's anything
+else and then if there is anything else
+then you can go forward back
+right
+you've got to be very careful about that
+do we have any questions on what we just
+did
+any questions
+all right moving along
+try that
+same idea
+try it out
+again all i'm asking for is what will be
+displayed
+get to work talk it over
+and get to work
+all right let's do this
+so on this one it's a it's obviously a
+little different okay
+but
+the setup is exactly the same
+there's all your functions are declared
+first
+and then we move on from there
+so in maine as you know that's the one
+really being called first
+we have get function 3.
+get function 3
+all it does is prints
+that's all it does so far and then it
+returns back to the main
+everybody okay with that to start
+next ones get function one get function
+one prince and a you know one of your
+classmates
+reminded me would actually print that a
+c b d all in one line individually and
+so i'm going to fix that up for this one
+so it's first going to print out an a
+and then it says get function 3 again
+what you're used to so that's c a c
+once we're done with function three we
+go back not to the main but whoever
+originally called it which is function
+one we re-look at function one and say
+okay both of them are done so let's go
+back to the main
+in main we have function five function
+five gives us an e that's
+really does and then returns back to the
+main
+then we have what function uh to do the
+six
+function 6 prints an f
+f
+function 6 doesn't do anything else than
+that and then we'll go function 2 and
+that prints
+a
+b
+is everybody okay with that though
+i could have made a mistake
+everybody alright with that
+we have any questions on it
+so what we just went over is how to call
+a function
+the logistics of a function and the
+interworks and workings of a function
+calling a function
+can this get complicated
+yes
+but the funny part is and i'll have this
+and i'll have somebody do this in this
+class
+i mean no disrespect to them
+they'll call would basically they'll
+call one and that one will call another
+one then that will call another one and
+then that will call it that's not
+supposed to happen that way
+your main
+is supposed to be called
+a delegator
+meaning that maine is going to be the
+one everybody comes back to
+returns values name does something with
+it and sends stuff back off but
+everything comes back to me
+it's not supposed to be spaghetti code
+where you're literally calling one
+function to finish another function
+that's not supposed to happen that way
+it's basically like you guys sending an
+attendant sheet
+you guys go to your certain function
+then you come to me back to the main
+show me your id and then sit down that's
+how that's supposed to work out
+it's not meant to be super complicated
+if it is getting complicated then it's a
+design that's an issue and something we
+should look at together
+it's not meant to get too deep
+how many functions call a function call
+a function
+unless we get the recursion and that's a
+whole another ballgame
+all right
+creating a simple function that returns
+a value
+in this type of function you're
+literally using the word return you've
+actually seen
+that word return before
+in this return function
+it's physically returning whatever the
+variable was
+now here's what i mean by that let me
+see if i can do this nicely
+is if the gentleman in front of me is
+the main
+and he calls me that zip code function
+i am physically
+going to return to the main
+a value i'm physically giving
+them a value
+that's what that function just did with
+the return
+physically give him data
+now it's up to the main on what to do
+with it
+but if you can believe it
+that line of code that you see and i'm
+going to scroll down slightly
+this line of code right here
+physically becomes
+2 1 1 8.
+because that's literally not put 9 here
+but forgive me but that's because that's
+what the function's literally returning
+back to the main is a value
+so if you look at that code above here
+it says get zip equals
+and it's a function call when that
+function call is all done
+get zip will now equal
+2 1 1 8.
+now
+all of these functions can return
+different types
+integers floats
+strings
+that's one of the fascinating parts
+about functions
+is that it can return to you or whatever
+you need as a programmer it can return
+to you an actual value
+yes sir can you pass a function as a
+parameter you can
+but that's that's 202 341 stuff
+but yes you can
+absolutely
+yeah matter of fact it's also 331 stuff
+yes sir can you run a function for a
+specific variable like as in like if you
+were to put it in the parenthesis would
+it would it run that function with
+uh
+say if the function uses the variable x
+would it run that function with
+x being whatever you wanted
+not whatever you want to it has to be
+defined by the program in some fashion
+first now it can be a variable it can
+still be a variable
+but it would need to be defined
+somewhere in the program
+so you'd have to define it before
+calling correct
+just like everything else seriously
+so but yes it still would need to be
+defined somewhere in the program before
+we could use it otherwise it'll it'll
+hate you after a mental offer yes sir
+it's just one value return
+here's a great question
+you just asked this is different for
+those you've had programming experience
+a function in python can return more
+than one value
+i'm going to show you that a little bit
+later
+okay
+yes sir and i would assume that
+functions could take more than one value
+absolutely and we'll get into that
+really remember this is only day one of
+functions we have day two coming up here
+let's survive day one
+all right
+proof that value is returned you know
+what
+i'm going to skip that for now
+i want you and your teammates to do the
+bottom problem
+i am not giving you all the information
+the code works
+there's nothing wrong with the code
+there are good there's going to be one
+question you're going to have to take an
+educated guess
+but i bet you'll be right
+so work on that bottom problem where it
+has def has value
+and give me some answers get to work
+talk it over over
+go from there get to work
+all right let's go over this
+so the function that you have to the
+left which is called
+has value gentlemen
+is going to have three questions to it
+the second one is a curveball
+now what i'm going to skip for a moment
+question number one and question number
+three you should be able to get
+only by just looking at the function
+seriously
+so question number one it asks what type
+of data is this function
+return
+can you give me an answer for that what
+type of data i already got you don't i
+appreciate you
+yes sir
+it is returning a boolean data type
+now this really answers number three
+number three is is what possible values
+can be returned gentlemen all in about
+true or false
+okay so one and three were pretty easy
+really
+okay
+number two
+is are there any variables declared
+inside the function
+i know a lot of you are going to say no
+and i understand why but you're actually
+wrong
+there is a variable being declared
+inside the function and it's called
+x
+now you're like well wait a minute
+that's not exactly the function
+yes it is
+that x
+by the way do we know what the value of
+x is going to be
+the answer is no we have no idea
+but we're using a variable x to then
+actually perform a comparison at the
+very end right here
+that is actually very consistent with
+other programming languages thankfully
+that's why i threw that curveball in
+there
+again if you didn't get it right that's
+okay
+that's why we went over this
+gentleman the backpack
+is it because
+of that comparison
+no no it's actually because of those
+parentheses that we haven't gone over
+yet
+see how it's literally buried inside of
+this parentheses those parentheses are
+called parameters
+and that's what the function is going to
+accept and then use in some fashion
+within it that's the key word is with
+that
+yes sir so if you were to call that with
+just any number in place of x it would
+run it for that number
+yeah which we would end up having an
+issue eventually with two
+because as you know it's supposed to be
+really checking to see if it's if it's
+uh uh defined or not
+so we might be able to get away with it
+but there might be some validation
+issues that we would have to check
+so interesting but true
+so number two is a curveball bear with
+me on now
+all right
+i love this one
+when i
+40 years ago when i was taught this next
+concept
+i honestly thought she was breaking out
+a microscope
+i never understood exactly what she was
+talking about she just should have just
+used a different word
+not a lot of you know what the word
+scope means when it comes to programming
+but all of you know the word
+jurisdiction
+because of the law
+whenever you've gotten a speeding ticket
+or lord knows what else you've done you
+know the word jurisdiction
+it's the same idea
+here
+in
+maryland
+when it comes to law enforcement
+there is a very very defined
+set of jurisdiction or scope
+for the law enforcement officers
+funny part is i just came from texas
+there isn't
+which means that a campus police officer
+could arrest you
+in
+austin texas and texas
+it's kind of
+but here in maryland
+your most local jurisdiction
+is the campus police officer or as a lot
+of you like to call poco for something
+right
+the funny part is if you step just off
+the line
+of
+campus and you did something obscene in
+front of that officer
+can they do anything about it
+no
+they can call back up
+okay but that backup would then have to
+be
+the town police
+and the town of arbutus probably really
+doesn't care about umbc much
+so they'll just pass it on to the county
+police
+let's say i just step outside of
+baltimore county just a little bit and i
+do something obscene in front of that
+police officer can they do anything
+about it
+no they can call back up and who's the
+next step after that is the maryland
+state police
+the maryland state police can arrest you
+anywhere or detain you or whatever you
+want to call it their jurisdiction is
+all over the place
+now why am i talking about this
+is because of
+variables
+variables in your python program have a
+scope
+or a jurisdiction
+you have some that are called global
+variables that will have that will live
+and die but have access throughout the
+entire program
+remember when we talked about magic
+numbers
+and magic numbers where we changed some
+values into set values at the very top
+of the program because if something
+changed we go to one spot it changes for
+the rest of them
+those were global variables they were
+accessible throughout the entire program
+their jurisdiction would be like a
+maryland state trooper in maryland
+but you also have local variables
+these variables will live
+work and die
+all in the function that they were
+declared
+in
+two very big scopes between the two
+so let's see if i got the point across
+give me one second yep there we go
+in my four examples that i am showing
+you
+i want you to tell me
+what will x
+print
+be very careful with the scope of the
+variable
+by the way they're definitely not all
+going to be the same answer
+check where the scope is check where
+it's declared and then go from there
+get to work talk it over
+walk it over get to work
+um
+all right
+let's go over this
+for those who have programming
+experience
+be
+careful your answers are probably wrong
+in at least one spot
+it's not your fault that's why we're
+going over those
+so in number one
+we're asking what is print x going to
+print at that location
+now you look at it and say well wait a
+minute print x okay well let me look
+locally
+locally is x declared anywhere
+the answer is no
+then i look globally
+now remember globally means outside of
+every function
+is there a global
+x in that program the answer is no
+now there is another local
+x
+that belongs
+in
+maine
+the analogy to that is having another
+sean lupoli out in the world
+there isn't i took care of it
+that sean lopoli
+is going to have different values
+might be skinnier
+i have a different job
+all that stuff but the name of that
+individual is still sean of holy
+but they're going to have their own
+individual values
+there probably is somebody else named
+you somewhere in the world
+some of you have very common names and
+some of you have very unique names
+but probably somebody else has
+but their values are going to be
+different that's okay
+now
+for those of you that have had
+programming experience you're used to
+having a variable declared first before
+it's used
+in python
+i don't have to do that
+so when i print x in this exact location
+in python
+my answer is actually not going to be
+error
+as many of you have probably written
+down it's going to be
+none
+because we haven't assigned it a value
+yet
+x is there
+we have no idea what value it's going to
+be
+yes sir it did say the options were
+error zero and 30. thank you i'll fix it
+thank you
+yes sir so it's been declared
+and i'm literally in that spot and oh
+literally literally in that spot
+yeah
+next one
+example number two
+we're asked what print x does
+so we look local
+okay local it hasn't been given a value
+in except for maybe that line
+but
+i look globally do we have a global
+variable of x
+yes
+has it been assigned a value
+yes
+what is that value zero zero
+everybody okay with that
+next one
+three
+we look locally
+yeah there's one right off the bat
+what's the value
+there
+that one's russo
+and then the last one
+the last one
+is interesting
+first we look local
+and we see that x is equal to 30.
+now
+if we have a local one that's already
+been declared and
+instantiated and given a value to
+does the local override
+the global
+the answer is
+yes
+now so here remember a global can be
+accessed by everybody access also means
+changed
+so it was ten thousand before it hit
+that line of x equals thirty
+now it's been changed if used to go
+thirty
+the answer for that last one is also
+even though it was
+10 000.
+yes sir
+it wasn't defined as zero before the
+print menu
+it's still not
+because that's a local variable that's
+living and dies inside a main
+very local
+it doesn't go outside of that scope yes
+ma'am
+it will be 30 for the entire program
+great question
+she just asked is 30 now sorry is eps
+going to be 30 throughout the entire
+program from here on out she's right
+it will be 30 from here on out
+yes sir
+[Music]
+throughout the whole program
+where am i changing it to be exact
+um
+yeah
+um yeah so in the sierra cole man oh you
+know what yeah that's a good point thank
+you
+he's right
+because main was called first
+x gets set to zero it was ten thousand
+now it's zero
+and now it'll get to seven thirty thank
+you good job
+yes sir so why is it
+why is x equal 30 for the entire program
+no it's not local if x has already been
+declared as a growth
+so for there's no x at the very top
+yes after this after this but it could
+have another function that changes it
+after that
+this is an educational example not a not
+a you know pure application okay
+so why is a good question shouldn't we
+shouldn't have access to changing like
+this in reality
+i'm going to show you how to protect
+that
+but you'd be amazing what code i see
+so that's why i put that in
+yes sir so if you define the variable x
+as a global and then in the main if you
+change x and then run a function that
+uses x will it use the change x correct
+whatever comes first and redefining the
+value yes so that's what that gentleman
+just asked so it only doesn't work if
+the value is only first defined in main
+correct
+yeah and like i said was just telling
+your other classmate there let me show
+you how we can get around that
+here in a minute
+bye
+issues with pythons
+or python and globals
+so in this one
+there's not always
+a nice way of making a variable well
+like i or we talked about that already
+now
+so
+what we do in order to basically keep
+things
+well simple
+is that their name the same
+the most local
+update trumps all we just talked about
+that
+okay
+that was problem number four
+i would highly suggest that you put a
+story by them
+because that's probably going to show up
+on your test
+so just heads up
+now
+back to returning
+when we're returning from a function
+remember that we're physically giving
+whoever called that function a value
+so when we pass something
+back again
+so when we pass back the value from a
+function
+we have to be very careful on what
+options those functions or sorry those
+values can be from the return
+so in the example that we have above
+where it says the has value which we've
+looked at before
+i'm going to ask how many possible
+values can this function return
+and then i'm also going to have how many
+values will be returned so real quick
+while i'm screwing the batteries again
+here go ahead and answer that with your
+teammates this should be an easy answer
+it could be an easy answer
+um
+oh
+all right
+so
+how many possible values could be
+returned from this function
+two
+okay
+now why is it only two
+in most functions
+in most functions
+it's going to be more than that but why
+is it only 2 in this particular function
+because that's what we decided in this
+return right here return x 0 return x
+minus 1. we need to find the function
+when you define the function you know
+if it's not
+false the only other option is true
+that's true so it's both the design of
+the function and the code inside of it
+is telling us both so we've got to
+define both
+okay
+that's the only reason why then how many
+values will be now how many values will
+be returned from this function
+just one
+all right
+now
+here's the crazy part about this
+is in python
+you can have a function return
+more than one value
+so if you look at this instance
+of a function using a list
+we have main and we're defining numbers
+list as well this garbage book
+and then we have min and max we're going
+to get the numbers we're passing in the
+value or the list of numbers
+it's going to return both men
+and a
+maxim
+how in the hell is it doing that
+how it's doing that
+is this last line right here
+okay
+now
+what it's doing is
+trying to remember what this line is
+supposed to do
+let me do this real quick
+i don't like this
+make sure it's not on the next page
+if i was given a list
+what is the easiest way well let's do it
+this way
+what is the easiest way
+of sorting that list to make sure it's
+in numerical order what function would i
+use
+sort function okay so that's exactly
+what i'm going to do
+so i'm going to sort
+my list of values
+so now
+my
+list is sorted
+how would i get the first
+how do i get the lowest value in a list
+yes sir
+the value index 0
+how would i get
+the highest value in the list yes sir
+you got it
+so here's what i could do
+return
+list of values index 0 comma list of
+values
+index negative 1.
+now i believe your notes are updating
+the same timeline or is that correct
+please do me a favor highlight that spot
+that i have highlighted right now right
+now in full screen so
+highlight that with the green or
+something like that for your own notes
+actually i'm not sure they can do that
+because access but anyway
+the important part is the comma
+in between
+the comma allows me to actually return
+multiple items at the same time
+here's the scary part is there a limit
+of the number of items that i can return
+the answer is no
+now to be honest with you doesn't wait
+for one of you two to ask
+yes there is a limit just from what you
+and i do
+you know application wise
+but the comma needs to be in between and
+what two values that you're going to
+return because now
+what it'll do
+is that it will then put them into
+the right one most is max which will be
+this one here
+the leftmost one of the
+noticeably separating comma there will
+be men
+that's how that'll work out
+yes sir
+can you return values in the middle of a
+function
+you're only allowed one return
+meaning that anything after the return
+doesn't even get to it
+because return is what's done when
+everything is done
+so when you have a return if you have
+something after it's probably not going
+to happen unless you have an nfl
+statement or something like that there's
+ways around it too
+but your return is meant to be when
+everything is said and done
+here's the answer
+okay
+so that's how it's supposed to work out
+how do we feel about that
+any questions on that especially for the
+newbies
+i'm going to draw i'm going to redraw
+this up when we can where we're done for
+class
+all right
+moving along longer
+that i've done
+last part for the day
+you're going to need to start adding
+some things to your functions
+this is not code
+all of this is just describing
+what your function
+is doing
+it's called a function header
+all it is is a description
+what inputs does it want and what
+outputs does it want
+it's a note to me
+because your programs are going to start
+getting more and more advanced
+you're going to have other functions
+that i didn't think you're going to need
+to build but you build anyway and that's
+fine
+so those are notes to me to let me know
+what is going on in your head
+you're also going to have this gentleman
+you're going to have this in your
+homework where it's going to be asked
+we're going to give it to you in that
+fashion too
+we're going to tell you what the
+function is supposed to do in the
+description we're going to tell you what
+inputs it should accept and then finally
+i'm going to tell you what outputs it
+should produce
+so these are called your function
+headers and they're very very simple all
+it is is comments that's it that's all
+it is
+but it describes to us what you're doing
+because all of you are going to start
+doing different things to solve your
+homeworks and that's okay
+there's nothing wrong with that
+all right
+any questions on what i did for
+this for today listen functions
+all right i'll see you guys on thursday

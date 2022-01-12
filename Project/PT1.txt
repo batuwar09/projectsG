@@ -1,0 +1,1552 @@
+1
+00:00:00,630 --> 00:00:11,790
+So functions for those of you that have had programing experience, most of it's going to be similar, at least in the overall development of them.
+
+2
+00:00:11,790 --> 00:00:17,790
+But Python has some very interesting features that you may not have had in your
+
+3
+00:00:17,790 --> 00:00:26,640
+previous language in C++ and job for those of you that are new to programing functions.
+
+4
+00:00:26,640 --> 00:00:37,200
+The only thing that they're really a first are good for is for breaking down larger pieces into smaller ones that frankly,
+
+5
+00:00:37,200 --> 00:00:45,100
+that we can test and maybe do a little bit a better job of organizing right now except for your homework.
+
+6
+00:00:45,100 --> 00:00:50,010
+Your homeworks has gotten a little bit longer and longer each time.
+
+7
+00:00:50,010 --> 00:00:54,670
+I'm not getting rid of that length when it comes to homework. It's just not going to happen.
+
+8
+00:00:54,670 --> 00:01:02,910
+Why? We're going to start breaking them down into logical bloc school functions so that, frankly,
+
+9
+00:01:02,910 --> 00:01:10,050
+you might be able to get away with fixing some cases and developing some pieces without the rest of it quite yet.
+
+10
+00:01:10,050 --> 00:01:15,750
+But it is up to you unless it's specified in the homework on how you want to break it up.
+
+11
+00:01:15,750 --> 00:01:21,090
+And again, that's all we're doing is really breaking up really long pieces of clue.
+
+12
+00:01:21,090 --> 00:01:24,810
+So what you see in front of you is my normal day.
+
+13
+00:01:24,810 --> 00:01:35,370
+When I'm teaching, I wake up, I get a shower, dress, drive to work, which takes me an hour, hour, 15 times good, Frenchified food, grab a coke.
+
+14
+00:01:35,370 --> 00:01:40,020
+I don't drink as much coke anymore. Fancy food.
+
+15
+00:01:40,020 --> 00:01:48,480
+Then I go to teach and an hour and a half, two hours later, I go back to the fridge and that is my schedule is very boring.
+
+16
+00:01:48,480 --> 00:01:59,250
+OK, I don't have a life, but I'm going to represent at the same fashion on the right hand side, on the right hand side.
+
+17
+00:01:59,250 --> 00:02:07,770
+The only thing that I did was I grouped up one portion that happens to repeat.
+
+18
+00:02:07,770 --> 00:02:11,510
+Now, I don't want you to think of it as a loop.
+
+19
+00:02:11,510 --> 00:02:22,310
+Because in that blog, I am doing different things, but notice I have other times in between that's happening, that is going to be different.
+
+20
+00:02:22,310 --> 00:02:26,200
+So it's not exactly a loop, but I am breaking up into logical blocks.
+
+21
+00:02:26,200 --> 00:02:33,050
+So now on the right hand side is representing the exact same thing.
+
+22
+00:02:33,050 --> 00:02:34,070
+You don't think it's different?
+
+23
+00:02:34,070 --> 00:02:41,510
+As I created a block, which is going to be a function eventually that has the same instructions that I do every time I go to the fridge,
+
+24
+00:02:41,510 --> 00:02:47,510
+find a coat or I'm sorry, good friend, find food, grab a fruit fly to see who I've got.
+
+25
+00:02:47,510 --> 00:02:52,700
+A lot of you have routines. And here's the other word for functions called a routine.
+
+26
+00:02:52,700 --> 00:02:58,070
+I mean, a lot of you have a routine in the morning, right?
+
+27
+00:02:58,070 --> 00:03:02,600
+I'm not going to discuss some of your routines because you're being gross already.
+
+28
+00:03:02,600 --> 00:03:08,690
+OK, well, I've had some of you have the same routines every single morning.
+
+29
+00:03:08,690 --> 00:03:19,670
+That's another name for a function is a routine, same idea your files set up is going to start changing today.
+
+30
+00:03:19,670 --> 00:03:24,920
+There was a lot of times where we didn't have a man or we did have a man.
+
+31
+00:03:24,920 --> 00:03:30,440
+And some of you, I let you go and now it's going to stop.
+
+32
+00:03:30,440 --> 00:03:35,690
+And frankly, all this is going to reflect more of what you had to do for your homework anyway,
+
+33
+00:03:35,690 --> 00:03:43,400
+so in your final set up, you're going to have two different major pieces there, I guess, of maybe three.
+
+34
+00:03:43,400 --> 00:03:51,080
+But it ended up he while certainly didn't have to be able to hold it up like you're going to have your functions first.
+
+35
+00:03:51,080 --> 00:03:55,640
+That's the yellow force or yellow. Wow. The blue portion first.
+
+36
+00:03:55,640 --> 00:04:00,380
+Then you'll have your main like you normally have a four and then you're called.
+
+37
+00:04:00,380 --> 00:04:07,520
+That means the very bottom. So for me, the only big change is actually putting functions at the very top.
+
+38
+00:04:07,520 --> 00:04:14,460
+We'll talk about why here in a little bit. The bad part is, is that it needs to be in that order.
+
+39
+00:04:14,460 --> 00:04:23,010
+You can't call the man which is in yellow and do it at the very top because we haven't defined what the main is.
+
+40
+00:04:23,010 --> 00:04:27,900
+You'll notice that when we define a main in Python, it's always def main.
+
+41
+00:04:27,900 --> 00:04:33,210
+And then in parentheses, that's what we're actually declaring, what the main is.
+
+42
+00:04:33,210 --> 00:04:40,500
+So we have to declare for a change. We have to define what the man is going to be first before we can use it.
+
+43
+00:04:40,500 --> 00:04:46,200
+So that word has to basically be right about the same order we got now.
+
+44
+00:04:46,200 --> 00:05:00,110
+So that's what's going to happen. There are different types of functions, even one step into the.
+
+45
+00:05:00,110 --> 00:05:10,130
+Any different types of functions you have functions to which return values, these values can be lists.
+
+46
+00:05:10,130 --> 00:05:16,070
+Yes, functions can return to list, it can be integers, doubles, floats, whatever.
+
+47
+00:05:16,070 --> 00:05:45,240
+Then you have your credit card functions and these functions.
+
+48
+00:05:45,240 --> 00:06:01,200
+The last one is called just a procedure and a procedure, it still does something, it's actually still very important.
+
+49
+00:06:01,200 --> 00:06:09,590
+It just doesn't return anything. And I know some of you are wondering what the heck is returning now going to to.
+
+50
+00:06:09,590 --> 00:06:15,060
+But all three are very important. All three are very important.
+
+51
+00:06:15,060 --> 00:06:20,250
+You need to know the terminology between all three, so come up and share your homeworks and other things like that.
+
+52
+00:06:20,250 --> 00:06:26,590
+All right, now. Creating a procedure,
+
+53
+00:06:26,590 --> 00:06:36,490
+this should look very similar to the name that you just had that you've been working on or seen first is going to be that deaf and deaf means that
+
+54
+00:06:36,490 --> 00:06:46,860
+you're defining what is the next item over which in this case is going to be printed menu and then you have an empty set of parentheses and a colon.
+
+55
+00:06:46,860 --> 00:06:56,200
+Then underneath that with the tab is all your other statements that you want inside of that particular procedure.
+
+56
+00:06:56,200 --> 00:07:00,250
+Now, it's going to look very similar to me. Can you have Olufsen that procedure? Absolutely.
+
+57
+00:07:00,250 --> 00:07:07,690
+Can you have less of that procedure? Absolutely. Everything that you've done so far, you can put into any procedure function.
+
+58
+00:07:07,690 --> 00:07:12,420
+You want everything. There's no holds barred. Not.
+
+59
+00:07:12,420 --> 00:07:22,530
+That's a nice part about that now. To see how the procedure works mechanically, it's very similar to what we call the man,
+
+60
+00:07:22,530 --> 00:07:31,230
+when you saw some examples at the very end, if you use me, put this one eye on the side and a remodeler.
+
+61
+00:07:31,230 --> 00:07:37,350
+I do a lot of things with houses I put in, insulation, wiring, all that stuff.
+
+62
+00:07:37,350 --> 00:07:46,490
+I have a lot of different toolboxes. But if I use that tool, that's OK, it's still sitting there and being around waiting to be used.
+
+63
+00:07:46,490 --> 00:07:54,830
+Think of a function or as a procedure, as a tool that we're not using unless we call it.
+
+64
+00:07:54,830 --> 00:08:02,700
+I know all of you have made this mistake before. For those of you that develop Amane, you run the program and it does spit out.
+
+65
+00:08:02,700 --> 00:08:08,330
+That's a problem. And you forgot to call the main at the very, very end.
+
+66
+00:08:08,330 --> 00:08:16,440
+I know I do it all the time so your functions can be sitting there and not be called and that's OK.
+
+67
+00:08:16,440 --> 00:08:20,750
+It is a tool that you may need to use later on.
+
+68
+00:08:20,750 --> 00:08:29,990
+But when you call it like you do here in print menu, it's eventually going to physically jump to the print menu function.
+
+69
+00:08:29,990 --> 00:08:35,150
+It will complete it from top to bottom and then it'll come back to the next line.
+
+70
+00:08:35,150 --> 00:08:43,790
+So there's a physical jump, whatever you call function, but you have to define what the function is first in order for it to do its job.
+
+71
+00:08:43,790 --> 00:08:47,620
+So there is some physical jumping around this sort of function.
+
+72
+00:08:47,620 --> 00:08:52,390
+And you should see this. Yeah.
+
+73
+00:08:52,390 --> 00:08:58,130
+You or you are in debt for your next function, your desk for your next function like name,
+
+74
+00:08:58,130 --> 00:09:01,280
+because remember, all of your custom functions are going to be above the main.
+
+75
+00:09:01,280 --> 00:09:06,290
+Your man would start the next line flat and be just man on character one.
+
+76
+00:09:06,290 --> 00:09:13,100
+Yep. That is. Let me go. You both have glasses, gentlemen, in front of you.
+
+77
+00:09:13,100 --> 00:09:18,290
+When you call me that, if I kind of like a moment. Yeah, yeah.
+
+78
+00:09:18,290 --> 00:09:23,780
+He asked is causing a malfunction. Yeah. In Python. I actually don't have to name it man.
+
+79
+00:09:23,780 --> 00:09:31,160
+I could name it, keep it as long as I call Keith and Keith is defined it and will run that function.
+
+80
+00:09:31,160 --> 00:09:34,940
+But main is what we're used to frankly from other languages and stuff like that.
+
+81
+00:09:34,940 --> 00:09:38,460
+Yes, absolutely. Great question on the line. I just want to make sure.
+
+82
+00:09:38,460 --> 00:09:46,020
+So in the beginning you're deferring and then you're also deferring all the functions, defining, you're defining, deferring.
+
+83
+00:09:46,020 --> 00:09:50,120
+It sounds like we're in a hospital bed, deferring it. We don't want that.
+
+84
+00:09:50,120 --> 00:09:54,380
+So you have to fire. Yes. So notice we're defining all the functions.
+
+85
+00:09:54,380 --> 00:10:02,830
+We have to define them first, build them whatever you want, and then we can call on after that, OK?
+
+86
+00:10:02,830 --> 00:10:07,650
+Yes, sir, I'm not sure this is really, but in some of our more recent programing assignments,
+
+87
+00:10:07,650 --> 00:10:15,280
+there's work to do a thing where you if all squadrons were named as you to understand where it would be.
+
+88
+00:10:15,280 --> 00:10:19,780
+Yeah, that's just defining it. If it happens to be a mean. That's that's why.
+
+89
+00:10:19,780 --> 00:10:25,960
+So, yes, you're looking for me if there's one to find. Oh, definitely.
+
+90
+00:10:25,960 --> 00:10:31,730
+All right. Well. Here's your first little exercise here.
+
+91
+00:10:31,730 --> 00:10:35,670
+This is kind of screwed up, so sorry, guys, give me a second here.
+
+92
+00:10:35,670 --> 00:10:48,800
+Yeah. All right, we fix that real quick, so function's calling other functions in determining order, you can have functions, call other functions.
+
+93
+00:10:48,800 --> 00:10:55,790
+It's just that simple. It's basically think of it as linking as the overall mechanics, what we're calling a mean.
+
+94
+00:10:55,790 --> 00:11:02,960
+There's really no difference with that. We get rid of this real quick. Here we go.
+
+95
+00:11:02,960 --> 00:11:09,070
+So here's what I want you to try to do. No one.
+
+96
+00:11:09,070 --> 00:11:16,000
+I would not like to fix this, do not copy and paste the code that I have in front.
+
+97
+00:11:16,000 --> 00:11:20,350
+There's problems as actually can anybody see the problem?
+
+98
+00:11:20,350 --> 00:11:25,180
+It's actually nothing syntactically wrong with it, but there's an issue with it.
+
+99
+00:11:25,180 --> 00:11:32,050
+Yes, sir. Go ahead. Yeah, it's a quotation marks about those are the smart quotes.
+
+100
+00:11:32,050 --> 00:11:38,170
+Knows how to handle to be flat up and down. OK, did you not copy paste this?
+
+101
+00:11:38,170 --> 00:11:41,140
+If you know what you're writing this code.
+
+102
+00:11:41,140 --> 00:11:50,200
+The only thing that I really want you to do is look at over with the teammate, the classmate and answer those three questions.
+
+103
+00:11:50,200 --> 00:11:56,320
+That's what I want you to work on right now. Get to work, wake up a little bit. Let's go talk it over.
+
+104
+00:11:56,320 --> 00:12:00,100
+Now you can talk. All right.
+
+105
+00:12:00,100 --> 00:12:41,470
+Go from. So Maine will be your first function that you call hearing, and that's because of really, if you read it from top down notice,
+
+106
+00:12:41,470 --> 00:12:50,380
+we're defining all the functions or even defining our main, which is how I got that highlighted green spot.
+
+107
+00:12:50,380 --> 00:12:56,530
+That doesn't mean we're running yet. It just means that we're defining it.
+
+108
+00:12:56,530 --> 00:13:03,490
+But to actually get the sucker going to run, we have to call it a first.
+
+109
+00:13:03,490 --> 00:13:12,370
+That's why you see Maine being called a Deverill on this very last line that we got on number two,
+
+110
+00:13:12,370 --> 00:13:18,770
+which function is entire program would be called second. Who's going to answer for me for that?
+
+111
+00:13:18,770 --> 00:13:24,160
+Yes, sir. Function one is the answer for that.
+
+112
+00:13:24,160 --> 00:13:29,890
+Right. And finally, what will be displayed from the code above?
+
+113
+00:13:29,890 --> 00:13:37,510
+So as you know, we're going to call Maine and the first function inside of me is get functional on it.
+
+114
+00:13:37,510 --> 00:13:45,100
+Function one, I physically hop up there and it says print a.
+
+115
+00:13:45,100 --> 00:13:49,150
+So on the screen is going to print our ad, so we're right on the board,
+
+116
+00:13:49,150 --> 00:13:57,800
+even though it says, well, try this one, oh no minute, you get your marker to put it.
+
+117
+00:13:57,800 --> 00:14:05,180
+Barbara. First, I want to bring in Mark.
+
+118
+00:14:05,180 --> 00:14:16,490
+Then information one I print, but then has another quality to another function that says, let's say it says function three.
+
+119
+00:14:16,490 --> 00:14:20,690
+So now I'm going to have to function three and function three.
+
+120
+00:14:20,690 --> 00:14:26,330
+It says print. See, after I'm done printing.
+
+121
+00:14:26,330 --> 00:14:29,610
+See, is there anything else left in that function.
+
+122
+00:14:29,610 --> 00:14:39,650
+Now be careful what I'm about to ask when I'm done with printing and taking care of everything in function.
+
+123
+00:14:39,650 --> 00:14:49,200
+See, where do I go back to made is not the correct answer.
+
+124
+00:14:49,200 --> 00:14:56,130
+Who called print function or circuit function three who call it really good function,
+
+125
+00:14:56,130 --> 00:15:06,300
+want to actually go back to function one first because it's the one who bought it and now back again, function one.
+
+126
+00:15:06,300 --> 00:15:13,290
+I'm all going to know where it is now and go back to that goes back to me because that's the only reason we call it.
+
+127
+00:15:13,290 --> 00:15:21,300
+So now this is a very distinct procedure on this that hopefully you're learning from.
+
+128
+00:15:21,300 --> 00:15:30,840
+All right, then, because I'm going back to the man and get the good function to give function to Prince of B and then it's all done or something,
+
+129
+00:15:30,840 --> 00:15:40,380
+let's say goes back to me, whoever called it man and says good function for and good function for Prince on day.
+
+130
+00:15:40,380 --> 00:15:50,800
+But if this function three so give function three and a princesse.
+
+131
+00:15:50,800 --> 00:15:58,370
+And once functioned three, as the line goes back to function four and then four is done, then that goes back to.
+
+132
+00:15:58,370 --> 00:16:05,070
+Is everybody OK with that, though? And notice, there's no opening it, probably.
+
+133
+00:16:05,070 --> 00:16:11,640
+There's no probably there's a very set procedure on how this is done.
+
+134
+00:16:11,640 --> 00:16:17,790
+Do not assume the function is done. Go back, take a look to see if there's anything else.
+
+135
+00:16:17,790 --> 00:16:23,750
+And then if there is anything else, then you can go for about. OK.
+
+136
+00:16:23,750 --> 00:16:28,630
+It's going to be very careful about how many questions and what we just did.
+
+137
+00:16:28,630 --> 00:16:37,270
+Any questions? All right, move along.
+
+138
+00:16:37,270 --> 00:16:46,980
+Tried that same idea, tried out, and again, all I'm asking for is what will be displayed.
+
+139
+00:16:46,980 --> 00:17:14,360
+Get to work. Talk it over and get to work.
+
+140
+00:17:14,360 --> 00:17:21,710
+All right, let's do this. So on this one, it's obviously a little different.
+
+141
+00:17:21,710 --> 00:17:33,470
+OK, but the setup is exactly the same as all your functions are declared first and then we move on from there.
+
+142
+00:17:33,470 --> 00:17:37,700
+So in Maine, as you know, that's the one really being called first.
+
+143
+00:17:37,700 --> 00:17:42,350
+We have dysfunction three again, function three.
+
+144
+00:17:42,350 --> 00:17:51,030
+All it does is Prince See, although so far and returns back to the main event.
+
+145
+00:17:51,030 --> 00:17:57,980
+Have to start next once get function, one good function, one prince and a you know,
+
+146
+00:17:57,980 --> 00:18:05,000
+one of your classmates reminded me when actually print that a CBD on one line individually.
+
+147
+00:18:05,000 --> 00:18:08,370
+And so I'm going to fix that up for this one.
+
+148
+00:18:08,370 --> 00:18:15,780
+So first going to play today, and that is dysfunction function three, yeah, what you're used to so that C.A.C.,
+
+149
+00:18:15,780 --> 00:18:22,410
+once we're done with function three, we go back down to the main of whoever originally called it, which is a function one.
+
+150
+00:18:22,410 --> 00:18:28,280
+We really at function one to say, OK, both of them are done. Let's go back to the main.
+
+151
+00:18:28,280 --> 00:18:37,760
+It may we are function five, function five gives us an E as long as it really does, and then returns back to the main that we have.
+
+152
+00:18:37,760 --> 00:18:47,010
+What function that it is six function six Prince and F.
+
+153
+00:18:47,010 --> 00:19:02,310
+F. Function six of the Matinenga function to not print's a big everybody, OK with that, though, I could have made a mistake.
+
+154
+00:19:02,310 --> 00:19:07,330
+Everybody I with the. We have many questions on.
+
+155
+00:19:07,330 --> 00:19:15,610
+So we just went over his house to call function the logistics of a function at the inner workings of function,
+
+156
+00:19:15,610 --> 00:19:21,010
+calling a function, how this get complicated.
+
+157
+00:19:21,010 --> 00:19:27,570
+Yes, but the funny part is, is that I'll have this and I'll have somebody do this in this class.
+
+158
+00:19:27,570 --> 00:19:31,540
+I mean, no disrespect to him. They'll call with it.
+
+159
+00:19:31,540 --> 00:19:36,040
+Basically, they'll call one and that one will call another one, and that will call another one.
+
+160
+00:19:36,040 --> 00:19:47,260
+And then they will call. That's not supposed to happen that way. Your man is supposed to be called a delegator.
+
+161
+00:19:47,260 --> 00:19:55,030
+I mean, that man is going to be the one everybody comes back to return.
+
+162
+00:19:55,030 --> 00:19:58,510
+Values man does something with it and says stuff that cool.
+
+163
+00:19:58,510 --> 00:20:02,690
+But everything comes back to me.
+
+164
+00:20:02,690 --> 00:20:10,220
+It's not supposed to be spaghetti code where you're literally calling one function to finish another function, that's not supposed to happen.
+
+165
+00:20:10,220 --> 00:20:13,820
+It's basically like you guys sending in a time machine.
+
+166
+00:20:13,820 --> 00:20:19,370
+You guys go to a certain function and you come to me back to the mansion, your idea and sit down.
+
+167
+00:20:19,370 --> 00:20:24,800
+That's how that's supposed to work out. It's not meant to be super complicated.
+
+168
+00:20:24,800 --> 00:20:31,100
+If it is getting complicated is a design that's an issue and something we should look at to go.
+
+169
+00:20:31,100 --> 00:20:37,940
+It's not meant to get too deep. How many functions call a function call a function unless we get the recursion.
+
+170
+00:20:37,940 --> 00:20:43,980
+And that's a whole nother ballgame. All right.
+
+171
+00:20:43,980 --> 00:20:52,470
+Creating a simple function that returns a value in this type of function, you're literally using the word return,
+
+172
+00:20:52,470 --> 00:21:06,150
+you've actually seen that word return before and this return function, it's physically returning, whatever the variable was.
+
+173
+00:21:06,150 --> 00:21:20,570
+Now, here's what I mean by that. See if I can do this nicely. Is it the gentleman in front of me is the man, and he calls me that zip code function.
+
+174
+00:21:20,570 --> 00:21:31,860
+I am physically going to return to the main value I physically giving the man about.
+
+175
+00:21:31,860 --> 00:21:36,900
+That's what that function just did with the return physically give him data.
+
+176
+00:21:36,900 --> 00:21:48,230
+Now it's up to the man on what to do with it. But if you believe in that line of code that you see, and I got to scroll down slightly.
+
+177
+00:21:48,230 --> 00:22:00,200
+This line of code right here physically becomes two one one eight, because that's literally nine foot nine here.
+
+178
+00:22:00,200 --> 00:22:07,670
+But forgive me, but that's because that's what the function is literally returning back to the main is a value.
+
+179
+00:22:07,670 --> 00:22:12,740
+So if you look at that code above here says give zip equals and that's a function call.
+
+180
+00:22:12,740 --> 00:22:19,680
+When that function call is all done, zip will now equal to one one eight.
+
+181
+00:22:19,680 --> 00:22:29,090
+Now, all of these functions can return different types, integers, floats, strings.
+
+182
+00:22:29,090 --> 00:22:37,460
+And that's one of the fascinating parts about functions, is that it can return to you or whatever you need as a programmer.
+
+183
+00:22:37,460 --> 00:22:42,260
+It can return to you an actual value. Yes, sir.
+
+184
+00:22:42,260 --> 00:22:49,730
+Can you pass a function as a parameter? You can, but that's that's two to three or four to one.
+
+185
+00:22:49,730 --> 00:22:55,670
+So, yes, you can. Absolutely. I think it's also three thirty one stuff.
+
+186
+00:22:55,670 --> 00:22:56,080
+Yes, sir.
+
+187
+00:22:56,080 --> 00:23:06,290
+Can you run a function for a specific variable like as in like if you were to put it in the parentheses, what would it run that function with,
+
+188
+00:23:06,290 --> 00:23:15,710
+say, if the function uses the variable X, would it run that function with X being whatever you wanted it, not whatever you want to.
+
+189
+00:23:15,710 --> 00:23:18,890
+It has to be defined by the program in some fashion first.
+
+190
+00:23:18,890 --> 00:23:24,770
+Now I'll give you a variable is simply a variable, but it would need to be defined somewhere in the program.
+
+191
+00:23:24,770 --> 00:23:28,910
+You'd have to define it before calling. Correct. Just like everything else.
+
+192
+00:23:28,910 --> 00:23:35,090
+Seriously. So but yes, it still would need to be defined somewhere in the program before we could use it.
+
+193
+00:23:35,090 --> 00:23:41,610
+Otherwise it'll help you out there. Yes, sir. It's just one value return.
+
+194
+00:23:41,610 --> 00:23:50,920
+Here's a great question. You just asked and this is different for those who have programing experience.
+
+195
+00:23:50,920 --> 00:23:56,770
+A function in Python can return more than one value.
+
+196
+00:23:56,770 --> 00:24:01,490
+I'm going to show you that a little bit later. Right.
+
+197
+00:24:01,490 --> 00:24:05,330
+Yes. And I would assume that sides could take more than one value. Absolutely.
+
+198
+00:24:05,330 --> 00:24:11,390
+We'll get into that, really. Remember, this is only day one of functions. We have day to survive.
+
+199
+00:24:11,390 --> 00:24:20,560
+Day one. All right. Prove that value is returned.
+
+200
+00:24:20,560 --> 00:24:28,500
+I must give that for me. I want you and your teammates to do the bottom problem.
+
+201
+00:24:28,500 --> 00:24:35,020
+I am not giving you all the information. The code works.
+
+202
+00:24:35,020 --> 00:24:38,820
+There's nothing wrong with the code. There are good.
+
+203
+00:24:38,820 --> 00:24:47,310
+And it's going to be one question. You're going to have to take an educated guess, but I bet you'll be right.
+
+204
+00:24:47,310 --> 00:24:54,810
+So we're going to bottom from where it has death, has value and give me some answers.
+
+205
+00:24:54,810 --> 00:24:58,290
+Get to work. I'm going to go from here.
+
+206
+00:24:58,290 --> 00:25:26,820
+Good work. All right, let's go over this set of songs that you have to the left, which is called Has You Gentlemen.
+
+207
+00:25:26,820 --> 00:25:31,950
+Is going to have three questions to in the second one is a curveball.
+
+208
+00:25:31,950 --> 00:25:37,470
+Now, I'm going to skip for a moment question number one and question number three.
+
+209
+00:25:37,470 --> 00:25:44,420
+You should be able to get only by just looking at the function, Sarasohn.
+
+210
+00:25:44,420 --> 00:25:51,860
+So question number one and ask what type of data is this function return?
+
+211
+00:25:51,860 --> 00:25:56,870
+Give me an answer to that. What type of data already got? I appreciate.
+
+212
+00:25:56,870 --> 00:26:01,730
+Yes, sir. It is returning a boolean data type.
+
+213
+00:26:01,730 --> 00:26:13,010
+Now, this really answers number three. Number three is is what possible value is can be returned from a hole in the budget shortfalls.
+
+214
+00:26:13,010 --> 00:26:19,980
+So one, two, three or four years earlier. OK, number two.
+
+215
+00:26:19,980 --> 00:26:26,540
+Is are there any variables declared inside the function?
+
+216
+00:26:26,540 --> 00:26:34,310
+I know a lot of you are going to say no and I understand why, but you're actually wrong.
+
+217
+00:26:34,310 --> 00:26:41,070
+There is a variable being declared inside, the function is called X.
+
+218
+00:26:41,070 --> 00:26:45,820
+Now you're like, wait a minute, that's not exactly the function.
+
+219
+00:26:45,820 --> 00:26:52,220
+Yes is. That X, by the way.
+
+220
+00:26:52,220 --> 00:26:56,420
+Do we know what the value of X is going to be?
+
+221
+00:26:56,420 --> 00:27:10,640
+The answer is no. We have no idea. Well, we're using a variable X to then actually perform a comparison at the very end right here.
+
+222
+00:27:10,640 --> 00:27:21,140
+That is actually very consistent with other programing languages, thankfully, that's what threw that curveball and again, didn't get it right.
+
+223
+00:27:21,140 --> 00:27:26,310
+That's OK. That's why we want to get in the background.
+
+224
+00:27:26,310 --> 00:27:34,920
+Is it because of that comparison? No, no, it's actually because of those parentheses that we haven't gone over yet.
+
+225
+00:27:34,920 --> 00:27:40,850
+That's literally buried in parentheses. Those parentheses are called parameters.
+
+226
+00:27:40,850 --> 00:27:51,560
+And that's what the function is going to accept and then use in some fashion when in it end that's the key word, is that I guess.
+
+227
+00:27:51,560 --> 00:27:57,020
+So if you were to call that with just any number in place of X, it would run it for that number.
+
+228
+00:27:57,020 --> 00:28:01,910
+Yeah. Which we would end up having in addition, eventually with zero,
+
+229
+00:28:01,910 --> 00:28:08,150
+because right now it's supposed to be really checking to see if it's if it's defined or not.
+
+230
+00:28:08,150 --> 00:28:13,160
+So we might be able to get away with it, but there might be some validation issues that we would have to check.
+
+231
+00:28:13,160 --> 00:28:20,110
+So I think. Number two is a curveball here with me on that.
+
+232
+00:28:20,110 --> 00:28:34,960
+All right, I love this one. What I 40 years ago when I was taught this next concept, I honestly thought she was breaking out a microscope.
+
+233
+00:28:34,960 --> 00:28:41,230
+I never understood exactly what she was talking about. And she just should have just used a different word.
+
+234
+00:28:41,230 --> 00:28:51,880
+Not a lot of, you know, the word scope means when it comes to programing, the whole, you know, the word jurisdiction because of the law,
+
+235
+00:28:51,880 --> 00:28:58,630
+whenever you've got a speeding ticket or Lord knows what else you've done, you know the word jurisdiction.
+
+236
+00:28:58,630 --> 00:29:06,230
+It's the same idea here in Maryland.
+
+237
+00:29:06,230 --> 00:29:18,140
+When it comes to law enforcement, there is a very, very defined set of jurisdiction or scope for the law enforcement officers.
+
+238
+00:29:18,140 --> 00:29:24,440
+Funny part is I just came from Texas. There isn't.
+
+239
+00:29:24,440 --> 00:29:34,850
+Which means that a campus police officer could arrest you in Austin, Texas and Texas.
+
+240
+00:29:34,850 --> 00:29:47,230
+But here in Maryland. Your lowest local jurisdiction is the campus police officer, or as lot of you like to call it,
+
+241
+00:29:47,230 --> 00:29:59,710
+the funny part is if you step just off the line of campus and you do something obscene in front of that officer, can they do anything about it?
+
+242
+00:29:59,710 --> 00:30:09,260
+Now they can call backup. OK, but that backup would then have to be the town police.
+
+243
+00:30:09,260 --> 00:30:17,180
+And the tone of our viewers is probably really doesn't care about you, NBC much, so they'll just pass it on to the county police.
+
+244
+00:30:17,180 --> 00:30:21,260
+Let's just step outside of Baltimore County just a little bit.
+
+245
+00:30:21,260 --> 00:30:26,150
+And I do some of scene in front of that police officer and they doing about it.
+
+246
+00:30:26,150 --> 00:30:32,230
+Now they can call back up. And who's the next step after that is the Maryland State Police.
+
+247
+00:30:32,230 --> 00:30:37,340
+Maryland State Police can arrest you anywhere or detain you or whatever you want to call in.
+
+248
+00:30:37,340 --> 00:30:40,250
+Their jurisdiction is all over the place.
+
+249
+00:30:40,250 --> 00:30:55,460
+Now, why am I talking about this is because of variables, variables in your Python program at a school or a jurisdiction.
+
+250
+00:30:55,460 --> 00:31:05,930
+You have some that are called global variables that will have that live and die, but have access throughout the entire program.
+
+251
+00:31:05,930 --> 00:31:15,050
+Remember, we talked about magic numbers and magic numbers where we changed some values into set values at the very top of the program,
+
+252
+00:31:15,050 --> 00:31:17,880
+because if something changed, we go to one spot, it changes.
+
+253
+00:31:17,880 --> 00:31:23,660
+The rest of those are global variables that were accessible throughout the entire program.
+
+254
+00:31:23,660 --> 00:31:32,030
+Their jurisdiction would be like a Maryland state trooper in Maryland. But you also have local variables.
+
+255
+00:31:32,030 --> 00:31:45,190
+These variables will live, work and die all in the function that they were declared in two very big scores between the two.
+
+256
+00:31:45,190 --> 00:31:48,850
+So let's see if I got the point across. Give me one second.
+
+257
+00:31:48,850 --> 00:31:55,950
+There we go. In my for examples that I am showing you.
+
+258
+00:31:55,950 --> 00:32:12,950
+I want you to tell me, what will X print be very careful with the scope of the variable, I we're definitely not going to be the same as.
+
+259
+00:32:12,950 --> 00:32:18,860
+Check where the school guards check was declared and then go from there.
+
+260
+00:32:18,860 --> 00:32:43,630
+Get to work, OK? No, I'm going to get to work.
+
+261
+00:32:43,630 --> 00:32:58,750
+Let's go over this. For those of you who have programing experience, be careful of your answers are probably wrong.
+
+262
+00:32:58,750 --> 00:33:02,500
+At least one spot is not your fault.
+
+263
+00:33:02,500 --> 00:33:13,060
+That's why we're going. So. Number one, we're asking, what is print X going to print at that location?
+
+264
+00:33:13,060 --> 00:33:19,330
+And you look at it and say, well, wait a minute, print X, OK, well, let me look locally.
+
+265
+00:33:19,330 --> 00:33:24,310
+Locally is X declared anywhere. Answer is no.
+
+266
+00:33:24,310 --> 00:33:31,690
+That I look globally. I'm remember globally means outside of every function.
+
+267
+00:33:31,690 --> 00:33:37,270
+Is there any global X in that program. The answer is no.
+
+268
+00:33:37,270 --> 00:33:47,230
+Now there is another logo X that belongs in me.
+
+269
+00:33:47,230 --> 00:33:52,510
+The analogy to that is having another showing you pulling out of the world.
+
+270
+00:33:52,510 --> 00:34:05,840
+There isn't. I took care. National polling is going to have different values, might be skinnier, I have a different job, all that stuff,
+
+271
+00:34:05,840 --> 00:34:15,300
+but the name of that individual is still showing the polling, but they're going to have their own individual values.
+
+272
+00:34:15,300 --> 00:34:21,790
+There probably is somebody else named you somewhere in the world.
+
+273
+00:34:21,790 --> 00:34:30,810
+Some of you have very common names and some of you have very unique names. But probably somebody else has, but their values are going to be different.
+
+274
+00:34:30,810 --> 00:34:37,760
+That's OK. Now, for those of you that have programing experience,
+
+275
+00:34:37,760 --> 00:34:47,030
+you're used to having a variable declared first before it's used in Python, I don't have to do that.
+
+276
+00:34:47,030 --> 00:34:57,450
+So when I print X in this exact location and python, my answer is actually not going to be error, as many of you have probably right now.
+
+277
+00:34:57,450 --> 00:35:06,650
+And it's going to be none because we haven't assigned to the value yet.
+
+278
+00:35:06,650 --> 00:35:11,780
+X is there. We have no idea what value is going to be.
+
+279
+00:35:11,780 --> 00:35:19,910
+So you could say the options were errors 01 30. Thank you, officer.
+
+280
+00:35:19,910 --> 00:35:28,390
+Yes, sir. So it's been declared and literally in that spot and, oh, literally, literally in that spot.
+
+281
+00:35:28,390 --> 00:35:32,510
+Yeah, cleared by my print ass, but it was never.
+
+282
+00:35:32,510 --> 00:35:37,940
+So it's empty. Yeah. That's why it's not. That's why it's not.
+
+283
+00:35:37,940 --> 00:35:41,600
+Right. That's one example.
+
+284
+00:35:41,600 --> 00:35:49,560
+Number two, again, we ask what pronounced does so we look local.
+
+285
+00:35:49,560 --> 00:35:54,410
+A local has been given a value except for maybe that line.
+
+286
+00:35:54,410 --> 00:35:59,180
+But I look globally. Do we have a global variable?
+
+287
+00:35:59,180 --> 00:36:03,710
+X yes. Has it been assigned a value?
+
+288
+00:36:03,710 --> 00:36:09,770
+Yes. What does that value? Zero zero zero.
+
+289
+00:36:09,770 --> 00:36:14,790
+OK, with that. That's what.
+
+290
+00:36:14,790 --> 00:36:29,540
+Three, we look globally. Yeah, there's one earth that was very, very L'Espresso and then the last one.
+
+291
+00:36:29,540 --> 00:36:41,950
+The last one is interesting. First, we look low and we see that X is equal to 30.
+
+292
+00:36:41,950 --> 00:36:51,320
+Now if we have a local one that's already been declared and instantiated and given a value to.
+
+293
+00:36:51,320 --> 00:37:02,420
+There's a local override, the global, and the answer is yes, sir, here, remember, a global can be accessed by everybody.
+
+294
+00:37:02,420 --> 00:37:14,850
+Access also means changed. So it was ten thousand before it hit that line of X equals 30.
+
+295
+00:37:14,850 --> 00:37:27,170
+Now it's been changed every single 30, that's for the last one is also heard, even though it was ten thousand.
+
+296
+00:37:27,170 --> 00:37:40,270
+That's a. It wasn't defined as here before the print media.
+
+297
+00:37:40,270 --> 00:37:48,770
+It's still not because that's a local variable that's living and dies inside of mean very little.
+
+298
+00:37:48,770 --> 00:37:56,660
+It doesn't go outside of that scope. Doesn't mean it will be security for the entire program.
+
+299
+00:37:56,660 --> 00:38:03,980
+Great question she just asked is 30 now. So, yes, it's going to be 30 throughout the entire program from here on out.
+
+300
+00:38:03,980 --> 00:38:07,790
+She's right. It will be 30 from here on out.
+
+301
+00:38:07,790 --> 00:38:16,730
+Yes, sir. What did you get from the computer? This is the next door right next throughout the whole.
+
+302
+00:38:16,730 --> 00:38:23,630
+Where am I changing it? To be exact. To me.
+
+303
+00:38:23,630 --> 00:38:27,350
+Yeah. Yeah. So in this here, call me.
+
+304
+00:38:27,350 --> 00:38:45,590
+Oh, you know what? That's a good point. Thank you. He's right.
+
+305
+00:38:45,590 --> 00:38:56,700
+Because Maine was called first acts get set to zero, it was ten thousand, now at zero, and now it'll get there.
+
+306
+00:38:56,700 --> 00:39:04,920
+Thank you. Yes, sir. Why is it for the last time, it's not.
+
+307
+00:39:04,920 --> 00:39:13,110
+Logothetis has already been Klara's agrowill. So for there's no at the very top that come before you.
+
+308
+00:39:13,110 --> 00:39:17,540
+Yeah, after. Yes, after this.
+
+309
+00:39:17,540 --> 00:39:21,990
+After this. But it could have another function that changes it after that.
+
+310
+00:39:21,990 --> 00:39:27,570
+And this is an educational example, not a not a, you know, pure application.
+
+311
+00:39:27,570 --> 00:39:34,880
+OK, so why is a good question. Shouldn't we shouldn't have access to changing that like this in reality?
+
+312
+00:39:34,880 --> 00:39:39,990
+I'm going to show you how to protect that. But you'd be amazed. What could I see?
+
+313
+00:39:39,990 --> 00:39:42,290
+That's why I put that in. Yes.
+
+314
+00:39:42,290 --> 00:39:51,620
+So if you define the variable X as a global division in the mean, you change and then run a function that uses X, will it use to change?
+
+315
+00:39:51,620 --> 00:39:55,040
+Correct. Whatever comes first and redefining the value.
+
+316
+00:39:55,040 --> 00:40:01,770
+Yes. So that's why that gentleman just assume it only doesn't work if the value is only first defined in May, correct?
+
+317
+00:40:01,770 --> 00:40:08,610
+Yeah. And like I said, I was just telling your other classmate their maché how we could get around that.
+
+318
+00:40:08,610 --> 00:40:20,840
+All right. Issues with pythons or Python Anglophiles, so in this one,
+
+319
+00:40:20,840 --> 00:40:29,120
+there's not always a nice way of making a variable like I or we talked about that already now.
+
+320
+00:40:29,120 --> 00:40:38,410
+So what we do in order to basically keep things, well, simple.
+
+321
+00:40:38,410 --> 00:40:44,890
+Is that their name, the same the most local update trumps all.
+
+322
+00:40:44,890 --> 00:40:49,630
+We just talked about that. OK, that was problem number four.
+
+323
+00:40:49,630 --> 00:40:56,960
+I would highly suggest that you put a star by that, because that's going to show up on your chest.
+
+324
+00:40:56,960 --> 00:41:15,490
+You just had the. Now. After returning, when we're returning from a function, remember that we're physically giving all of that function of our.
+
+325
+00:41:15,490 --> 00:41:24,190
+So when we passed something back again. One of the.
+
+326
+00:41:24,190 --> 00:41:32,350
+Yeah. So when we pay us back to value from a function,
+
+327
+00:41:32,350 --> 00:41:40,080
+we have to be very careful on what options those functions are sorry those values can be from the return.
+
+328
+00:41:40,080 --> 00:41:45,270
+So the example that we have above where it says has value, which we've looked at before,
+
+329
+00:41:45,270 --> 00:41:51,180
+I'm going to ask how many possible values can this function return an animal is going to have?
+
+330
+00:41:51,180 --> 00:41:55,350
+How many values will be returned to real quick ones screwing the batteries?
+
+331
+00:41:55,350 --> 00:41:59,430
+Again, we're going to answer that with your teammates. It should be an easy answer.
+
+332
+00:41:59,430 --> 00:42:20,400
+Easy answer. What we want is a return of.
+
+333
+00:42:20,400 --> 00:42:46,140
+I was in love with.
+
+334
+00:42:46,140 --> 00:42:57,150
+All right, so how many possible values could be returned from this function to right now?
+
+335
+00:42:57,150 --> 00:43:07,550
+Why is it only two in those functions?
+
+336
+00:43:07,550 --> 00:43:12,250
+In most conscience, it's going to be more than that.
+
+337
+00:43:12,250 --> 00:43:16,340
+But why is it only two in this particular function?
+
+338
+00:43:16,340 --> 00:43:25,010
+Because that's what we decided to this return right here and return actually zero X minus one you can find when you define the function,
+
+339
+00:43:25,010 --> 00:43:33,950
+you know, more than anything else. So if it's not the only other option, that's true.
+
+340
+00:43:33,950 --> 00:43:39,200
+So it's both the design of the function and the code inside of it is telling us both.
+
+341
+00:43:39,200 --> 00:43:43,340
+So we got to define both. OK, that's really reasonable.
+
+342
+00:43:43,340 --> 00:43:48,860
+Now, how many values will be right now? How many values will be returned from this function?
+
+343
+00:43:48,860 --> 00:44:05,210
+Just one. All right, now, here's the crazy part about this is in Python, you can have a function return more than one value.
+
+344
+00:44:05,210 --> 00:44:17,200
+So if you look at this instance of a function using a list, we have main and defining numbers list as well, this gobbledygook.
+
+345
+00:44:17,200 --> 00:44:23,940
+And then we have Mel and Max, we're going to get the numbers for passing in the value or the list of numbers,
+
+346
+00:44:23,940 --> 00:44:31,370
+and it's going to return both men and a max.
+
+347
+00:44:31,370 --> 00:44:41,810
+How in [INAUDIBLE] is he doing that? How it's doing, that is this last line right here.
+
+348
+00:44:41,810 --> 00:44:51,480
+OK. Now, what it's doing is Panopto.
+
+349
+00:44:51,480 --> 00:44:58,210
+Trying to remember what this law was supposed to do. We do this real quick.
+
+350
+00:44:58,210 --> 00:45:28,450
+I don't like this. To make sure it's not on the next page in.
+
+351
+00:45:28,450 --> 00:45:34,910
+If I was given the list. What is the easiest way to do it this way?
+
+352
+00:45:34,910 --> 00:45:42,090
+What is the easiest way of sorting that list to make sure it's him no matter what?
+
+353
+00:45:42,090 --> 00:45:46,550
+Should I use this sort function? All right, let's go.
+
+354
+00:45:46,550 --> 00:45:52,050
+Going to do. I'm going to sort. Oh.
+
+355
+00:45:52,050 --> 00:46:03,360
+And I lost about. So now my list is shorter.
+
+356
+00:46:03,360 --> 00:46:12,950
+How would I get the first? How would I get the lowest value in the last?
+
+357
+00:46:12,950 --> 00:46:21,740
+Yes, sir, many thanks to you. The value index zero, however, I get the highest value in the last year.
+
+358
+00:46:21,740 --> 00:46:27,790
+Yes, sir. You got it. So here's what I could do.
+
+359
+00:46:27,790 --> 00:46:34,380
+Chern. List of values index zero common values.
+
+360
+00:46:34,380 --> 00:46:44,590
+Index negative. Now, I believe your notes are updating the same timeline, is that correct?
+
+361
+00:46:44,590 --> 00:46:48,490
+Please do me a favor. Highlight that spot that I have highlighted right now, right now with full screen.
+
+362
+00:46:48,490 --> 00:46:53,560
+So I dealt with a green or something like that for you.
+
+363
+00:46:53,560 --> 00:46:55,510
+Actually, I'm not sure they can do that because access.
+
+364
+00:46:55,510 --> 00:47:12,400
+But the important part is the comma in between the comma allows me to actually return multiple items at the same time.
+
+365
+00:47:12,400 --> 00:47:17,260
+Here's the scary part, is there a limit of the number of items that I can return?
+
+366
+00:47:17,260 --> 00:47:23,650
+The answer is no. Now, to be honest with you, is a win for one of you to ask?
+
+367
+00:47:23,650 --> 00:47:30,010
+Yes, there is a limit just from what you and I do, you know, application wise.
+
+368
+00:47:30,010 --> 00:47:34,480
+But the economy needs to be between a what to value is that you're going to return
+
+369
+00:47:34,480 --> 00:47:43,000
+because now what it will do is that it will then put the end to the right one versus Max,
+
+370
+00:47:43,000 --> 00:47:52,470
+which I mean this one here, the leftmost one of the nurses separating comma there will be met.
+
+371
+00:47:52,470 --> 00:48:00,410
+And that's how that all worked out. Yes, sir. OK, you referred to values in the middle of a Plunket.
+
+372
+00:48:00,410 --> 00:48:14,760
+You're only allowed one return. Meaning that anything after the return doesn't even get to because return is what's gone when everything is done.
+
+373
+00:48:14,760 --> 00:48:20,280
+So when you have a return, if you have something after, it's not going to happen unless you have an NFL statement or something like that.
+
+374
+00:48:20,280 --> 00:48:23,670
+There's ways around it to get your return is meant to be.
+
+375
+00:48:23,670 --> 00:48:34,380
+When everything is said and done, there's an. That's how it's supposed to work out, how we feel about that.
+
+376
+00:48:34,380 --> 00:48:44,140
+Any questions on that, especially for the newbies? I'm going to draw and read, draw this up where we're done for class.
+
+377
+00:48:44,140 --> 00:48:52,710
+Hi. No longer.
+
+378
+00:48:52,710 --> 00:49:03,890
+Done. Last part for the day, you're going to need to start adding some things to your functions.
+
+379
+00:49:03,890 --> 00:49:19,360
+This is not code. All of this is just describing what your function is doing or function had it all is is a description.
+
+380
+00:49:19,360 --> 00:49:33,200
+What inputs does it want and what outputs doesn't want? It's a note to me, because your programs are going to start getting more and more advanced.
+
+381
+00:49:33,200 --> 00:49:40,910
+You're going to have other functions that I didn't think you're going to pay the bill, but you going anyway and that's fine.
+
+382
+00:49:40,910 --> 00:49:45,440
+Those are notes to me to let me know what is going on in your head.
+
+383
+00:49:45,440 --> 00:49:51,230
+You're also going to have his job and you're going to have us in your homework where it's going to be asked.
+
+384
+00:49:51,230 --> 00:49:57,860
+We're going to give it to you in that fashion to we're going to tell you what the function supposed to do in the description.
+
+385
+00:49:57,860 --> 00:50:04,860
+We're going to tell you what afterwards it should accept and then from or to tell you what output should produce.
+
+386
+00:50:04,860 --> 00:50:11,850
+These are called your function headers, and they're very, very simple, it is his comments it choice.
+
+387
+00:50:11,850 --> 00:50:18,870
+But describe to us what you're doing because all of you are going to start doing different things to solve your homework.
+
+388
+00:50:18,870 --> 00:50:35,173
+And that's OK. All right, any questions on what I did for this for today, listen, function, I'll see you guys on.
+
